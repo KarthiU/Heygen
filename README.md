@@ -84,14 +84,10 @@ python main.py
 
 ## Common Issues
 
-### 1. Inconsistent voice across cues
-This happens because XTTS re-estimates speaker embeddings per segment.  
-Workaround: Use longer reference audio (clean speech) and apply cross-fading when concatenating.
-
-### 2. Coqui TTS import not working
+### 1. Coqui TTS import not working
 Make sure `TTS` is installed separately (see [Setup Step 3](#3-install-coqui-tts-if-not-already-pulled-in)).
 
-### 3. CUDA not detected
+### 2. CUDA not detected
 Check PyTorch install:
 ```bash
 python -c "import torch; print(torch.cuda.is_available())"
