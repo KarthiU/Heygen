@@ -1,0 +1,14 @@
+transformers>=4.43.0
+torch>=2.2.0
+sentencepiece
+sacremoses
+pysrt
+pydub
+soundfile
+numpy
+ffmpeg-python
+tqdm
+TTS>=0.22.0
+phonemizer
+librosa
+pyyaml
