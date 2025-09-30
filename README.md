@@ -39,7 +39,7 @@ pip install TTS --extra-index-url https://download.pytorch.org/whl/cu121
 ```
 
 ### 4. Prepare resources
-- **Reference audio**: A clean 6–15s clip of the original English speaker (`samples/Tanzania-ref.wav` provided).
+- **Reference audio**: A clean 6–15s clip of the original English speaker (`samples/Tanzania-ref.wav`, which is obtained from `samples/Tanzania.mp4 ).
 - **Subtitles**: English `.srt` file with timestamps (`samples/Tanzania-caption.srt` provided).
 
 ---
@@ -68,10 +68,11 @@ python main.py
 - Multilingual support – Handles German synthesis out-of-the-box.
 - Voice cloning – Generates speech in German using an English speaker’s reference voice.
 - Offline support – No need for cloud APIs, unlike ElevenLabs or Azure TTS.
+- No expenses
 
 ### Why MarianMT?
 - High-quality parallel corpora – Trained on OPUS datasets (English↔German is particularly strong).
-- Offline availability – Runs with Hugging Face Transformers, no API keys required.
+- Offline availability – Runs with Hugging Face Transformers, no API keys or payment required.
 - Lightweight – Fast enough for processing whole subtitle files locally.
 
 ### Cue-Based Processing
@@ -110,7 +111,9 @@ python main.py
 - `samples/Tanzania-ref.wav`
 
 **Output:**
-- `outputs/final.wav`
+- `outputs/new_audio.wav`
+- `outputs/translated.srt`
+- `outputs\video_with_new_audio.mp4`
 
 Plays German audio of the translated subtitles, spoken in the reference speaker’s cloned voice, aligned to the original timings.
 
