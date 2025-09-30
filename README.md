@@ -103,7 +103,7 @@ If `False`, reinstall with GPU wheels from [PyTorch](https://pytorch.org/get-sta
 ## Example Run
 
 ```bash
-python main.py
+python -m src.main      
 ```
 
 **Input:**
